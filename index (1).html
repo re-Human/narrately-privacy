@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Narrately</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --ink-soft: #5a5a5a;
+    --paper: #faf9f6;
+    --rule: #e5e2dc;
+    --teal: #006b5e;
+    --teal-deep: #004d42;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .spine {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 6px;
+    background: linear-gradient(180deg, var(--teal) 0%, var(--teal-deep) 100%);
+  }
+
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 72px 28px 96px 28px;
+  }
+
+  @media (min-width: 640px) {
+    main { padding-left: 56px; }
+  }
+
+  .eyebrow {
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--teal);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 40px;
+    line-height: 1.15;
+    margin: 0 0 6px 0;
+    letter-spacing: -0.01em;
+  }
+
+  .updated {
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin-bottom: 44px;
+  }
+
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    margin: 48px 0 14px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  h2 .num {
+    color: var(--teal);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  p { margin: 0 0 16px 0; color: var(--ink); }
+
+  a { color: var(--teal); text-decoration: none; border-bottom: 1px solid rgba(0,107,94,0.35); }
+  a:hover { border-bottom-color: var(--teal); }
+
+  .contact-box {
+    margin-top: 8px;
+    padding: 18px 20px;
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--teal);
+    border-radius: 4px;
+    font-size: 15px;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 56px 0 0 0;
+  }
+
+  footer {
+    margin-top: 24px;
+    color: var(--ink-soft);
+    font-size: 13px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    main { animation: rise 0.5s ease-out; }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  }
+</style>
+</head>
+<body>
+<div class="spine" aria-hidden="true"></div>
+<main>
+  <div class="eyebrow">Narrately</div>
+  <h1>Privacy Policy</h1>
+  <div class="updated">Last updated: 8/3/2026</div>
+
+  <p>This Privacy Policy describes how Narrately ("the App," "we," "us") handles information when you use the app.</p>
+
+  <h2><span class="num">01</span> Files You Import</h2>
+  <p>Narrately reads book and audiobook files (EPUB, MP3, M4B, and similar formats) that you choose to import using Android's built-in file picker (Storage Access Framework). The app only accesses the specific files or folders you explicitly select — it does not have, and does not request, broad access to your device's storage, photos, or media library.</p>
+  <p>Imported files, extracted cover art, and your reading/listening progress are stored locally on your device, in the app's private storage. <strong>We do not upload, transmit, or have any access to the content of your books or audiobooks.</strong></p>
+
+  <h2><span class="num">02</span> Cover Art Lookups</h2>
+  <p>When you add a book, Narrately may attempt to find and download cover art for it using the <a href="https://openlibrary.org/" target="_blank" rel="noopener">Open Library</a> API, a free and open service operated by the Internet Archive. To do this, the app sends the book's title, author, or ISBN (if available) to Open Library's servers to search for a matching cover image.</p>
+  <p>This is the only third-party service the app communicates with for this purpose. No other information about you or your device is included in these requests.</p>
+
+  <h2><span class="num">03</span> Purchases</h2>
+  <p>If you choose to unlock the full version of the app, your purchase is processed entirely through <strong>Google Play Billing</strong>. Narrately does not collect, store, or have access to your payment information (card numbers, billing address, etc.) — that is handled directly by Google Play under <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's own Privacy Policy</a>. Narrately only receives confirmation of whether a purchase was completed, which is stored locally on your device to determine what features are unlocked.</p>
+
+  <h2><span class="num">04</span> Data We Do Not Collect</h2>
+  <p>Narrately does not collect analytics, does not track your reading habits for advertising purposes, does not require an account or login, and does not share any information with advertisers. There are no ads in this app.</p>
+
+  <h2><span class="num">05</span> Permissions</h2>
+  <p>The app requests only the minimum permissions needed to function:</p>
+  <p>
+    <strong>Storage access</strong> (via Storage Access Framework) — to let you choose which book/audiobook files to import.<br>
+    <strong>Foreground service / media playback</strong> — to let audio continue playing in the background and show playback controls in your notification shade.<br>
+    <strong>Network access</strong> — used only for the cover art lookups described in Section 2, and to process purchases through Google Play Billing.
+  </p>
+
+  <h2><span class="num">06</span> Data Retention &amp; Deletion</h2>
+  <p>All app data (your library, reading progress, settings) is stored locally on your device. Uninstalling the app removes this data. Narrately has no servers of its own and cannot retain data on your behalf.</p>
+
+  <h2><span class="num">07</span> Children's Privacy</h2>
+  <p>Narrately is not directed at children under 13 and does not knowingly collect information from children.</p>
+
+  <h2><span class="num">08</span> Changes to This Policy</h2>
+  <p>We may update this policy from time to time. Changes will be posted at this same URL with an updated "Last updated" date.</p>
+
+  <h2><span class="num">09</span> Contact</h2>
+  <p>If you have questions about this policy, contact:</p>
+  <div class="contact-box">imrealhuman@gmail.com</div>
+
+  <hr>
+  <footer>Narrately — a reading and listening tool for the books you already own.</footer>
+</main>
+</body>
+</html>
